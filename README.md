@@ -72,5 +72,5 @@ http://cvl-e3e.cern.ch:5601/
 
 # Improvement suggestions
 
-* Kibana provides a very simple dashboard prototyping tool, but does not integrate with other web technologies. Consider Opensocial (http://en.wikipedia.org/wiki/OpenSocial) for a standard way of sharing visualizations and integrating them in third-party websites.
+* Kibana provides a very simple dashboard prototyping tool, but does not integrate with other web technologies. Consider Opensocial (http://en.wikipedia.org/wiki/OpenSocial) for a standard way of sharing visualizations and integrating them in third-party websites, combined with the D3JS javascript API.
 * As discussed during MozSprint 2015, E3E requires data policy enforcements (based on time, the context of the situation being reported upon, confidentiality levels) that ElasticSearch cannot handle out of the box - a layer on top, inspired by Elastic Shield, or an extension of open source project https://github.com/floragunncom/search-guard , would address this.
