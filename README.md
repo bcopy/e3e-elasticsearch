@@ -66,8 +66,9 @@ http://cvl-e3e.cern.ch:5601/
 
 # Advocacy
 
-* ElasticSearch supports geographical querying (e.g. "Show me the points located in that polygon area")
-* ElasticSearch provides a built-in REST querying languages and JSON support
+* ElasticSearch supports geographical querying (e.g. "Show me the points located in that polygon area").
+* ElasticSearch provides a built-in REST querying languages and JSON support.
+* ElasticSearch provides an easy data integration point to cross-reference other data source (such as OCHA's HDX repository)
 
 # Improvement suggestions
 
