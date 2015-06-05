@@ -1,4 +1,5 @@
-# e3e-elasticsearch
+# E3E ElasticSearch prototype
+
 Extreme Energy Event Monitoring aims at making available on a public basis the technological means  to monitor explosions and other extreme energy events in real-time, objectively and through open-access.
 
 This repository features an ElasticSearch prototype for E3E based on Docker and Kibana.
@@ -12,11 +13,10 @@ ElasticSearch can be used to collect data and query it through simple HTTP / RES
 Docker is a virtualization container that allows to host lightweight operating system images and automate their maintenance.
 Docker ships with most Linux distribution, please refer to the Docker setup procedures for your operating system.
 
-### Docker on CentOS 7
+### Docker on Linux CentOS 7
 
 ```bash
 yum install docker
-adduser -g docker -m docker
 ```
 
 ### Setting up a quick ElasticSearch image with Docker
@@ -59,7 +59,17 @@ curl -XPOST  http://$E3E_HOSTNAME/e3e/event/_bulk --data-binary @sample.json
 ```
 
 You can then open your web browser to the Kibana 4 interface (the default port is 5601).
-For example, we have deployed our Docker machines on **cvl-e3e.cern.ch**
+
+For example, we have deployed our Docker machines on **cvl-e3e.cern.ch** :
+
 http://cvl-e3e.cern.ch:5601/
 
+# Advocacy
 
+* ElasticSearch supports geographical querying (e.g. "Show me the points located in that polygon area")
+* ElasticSearch provides a built-in REST querying languages and JSON support
+
+# Improvement suggestions
+
+* Kibana provides a very simple dashboard prototyping tool, but does not integrate with other web technologies. Consider Opensocial (http://en.wikipedia.org/wiki/OpenSocial) for a standard way of sharing visualizations and integrating them in third-party websites.
+* As discussed during MozSprint 2015, E3E requires data policy enforcements (based on time, the context of the situation being reported upon, confidentiality levels) that ElasticSearch cannot handle out of the box - a layer on top, inspired by Elastic Shield, or an extension of open source project https://github.com/floragunncom/search-guard , would address this.
