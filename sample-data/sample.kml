@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <Document>
+        <name>e3e Sample Data</name>
+        <atom:author>
+            <atom:name>e3e Monitor Association</atom:name>
+        </atom:author>
+        <atom:link href="http://theport.ch/e3e"/>
+        <Folder>
+            <name>Magnitude 5</name>
+            <Placemark id="2012 Jan 15 13:40:16.40 UTC">
+                <name>M 10.0 - </name>
+                <magnitude>10.0</magnitude>
+                <Point>
+                    <coordinates>7.4459,46.955,0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="2012 Jan 15 13:40:16.41 UTC">
+                <name>M 9.9 - </name>
+                <magnitude>9.9</magnitude>
+                <Point>
+                    <coordinates>7.4459,46.95,0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="2012 Jan 15 13:40:16.42 UTC">
+                <name>M 8.8 - </name>
+                <magnitude>8.8</magnitude>
+                <Point>
+                    <coordinates>7.4449,46.945,0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="2012 Jan 15 13:40:16.43 UTC">
+                <name>M 7.7 - </name>
+                <magnitude>7.7</magnitude>
+                <Point>
+                    <coordinates>7.4439,46.943,0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="2012 Jan 15 13:40:16.44 UTC">
+                <name>M 6.7 - </name>
+                <magnitude>7.7</magnitude>
+                <Point>
+                    <coordinates>7.4429,46.94334,0</coordinates>
+                </Point>
+            </Placemark>
+            <Placemark id="2012 Jan 15 13:40:16.45 UTC">
+                <name>M 5.7 - </name>
+                <magnitude>7.7</magnitude>
+                <Point>
+                    <coordinates>7.4449,46.94312,0</coordinates>
+                </Point>
+            </Placemark>
+
+        </Folder>
+    </Document>
+</kml>

@@ -1,0 +1,13 @@
+{
+    "event": {
+      "properties": {
+        "eventuuid": { "type": "string" },
+        "timestamp" : { "type":"date"},
+        "location": { "type": "geo_point" },
+        "elevation" : { "type":"float"},
+        "confidence" : { "type":"float"},
+        "size" : { "type":"float"},
+        "type" : { "type": "string"}
+      }
+    }
+}
