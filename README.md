@@ -3,6 +3,8 @@ Extreme Energy Event Monitoring aims at making available on a public basis the t
 
 This repository features an ElasticSearch prototype for E3E based on Docker and Kibana.
 
+ElasticSearch can be used to collect data and query it through simple HTTP / REST calls. Data is automatically indexed, and can be templated (i.e. mapped to data types and data constraints) to make searching more efficient (e.g. declaring a given field is a number allows to perform simple mathematical aggregations such as MAX, MIN or SUM).
+
 # Setup Procedure
 
 ## Setting up Docker
@@ -27,6 +29,16 @@ docker run -p 0.0.0.0:9200:9200 --name es -t elasticsearch
 # Open an interactive console to poke around
 docker exec -t -i es /bin/bash
 ```
+### Setting up a quick Kibana 4 image with Docker
+Using [https://github.com/bobrik/docker-kibana], open a link between the Kibana and ElasticSearch containers.
+```bash
+docker pull bobrik/kibana
+docker run -d -p 0.0.0.0:5601:5601 --name kib -e KIBANA_ES_URL=http://cvl-e3e:9200 --link es:cvl-e3e -t bobrik/kibana
+```
+:warning: Kibana requires the hostname and exposes it - TO DO : Find a 
+
+## Seeding data
+
 
 # DockerFile
 
