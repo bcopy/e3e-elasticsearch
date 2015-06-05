@@ -52,7 +52,7 @@ You can use a simple HTTP client tool like **curl** to perform the above steps.
 export E3E_HOSTNAME=http://cvl-e3e.cern.ch:9200
 
 wget http://raw.githubusercontent.com/bcopy/e3e-elasticsearch/master/sample-data/es-template-e3event.json
-wget http://raw.githubusercontent.com/bcopy/e3e-elasticsearch/master/sample.json
+wget http://raw.githubusercontent.com/bcopy/e3e-elasticsearch/master/sample-data/sample.json
 curl -XPUT http://$E3E_HOSTNAME/e3e/
 curl -XPUT http://$E3E_HOSTNAME/e3e/_mapping/event --data-binary @es-template-e3event.json
 curl -XPOST  http://$E3E_HOSTNAME/e3e/event/_bulk --data-binary @sample.json
