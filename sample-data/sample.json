@@ -1,13 +1,11 @@
-{
-    "event": {
-      "properties": {
-        "eventuuid": { "type": "string" },
-        "timestamp" : { "type":"date"},
-        "location": { "type": "geo_point" },
-        "elevation" : { "type":"float"},
-        "confidence" : { "type":"float"},
-        "size" : { "type":"float"},
-        "type" : { "type": "string"}
-      }
-    }
-}
+{ "index" : { "_index" : "e3e", "_type" : "event" } }
+{ "eventuuid": "6ca9b538-0b5a-11e5-ba50-02163e00a1e7" ,"timestamp" : 1433391964000 ,"location" : { "lat": 46.4363427, "lon": 6.1183151  } ,"elevation" : 500 ,"confidence" : 99.9 ,"size": 92 ,"type": "Gas Explosion" }
+{ "index" : { "_index" : "e3e", "_type" : "event" } }
+{ "eventuuid": "ccdee090-0b64-11e5-98b6-02163e00a1e7" ,"timestamp" : 1433495964000 ,"location" : { "lat": 46.2363527, "lon": 6.1183151  } ,"elevation" : 500 ,"confidence" : 95.9 ,"size": 40 ,"type": "Detonation" }
+{ "index" : { "_index" : "e3e", "_type" : "event" } }
+{ "eventuuid": "da1b10a8-0b64-11e5-b78b-02163e00a1e7" ,"timestamp" : 1433381965000 ,"location" : { "lat": 46.236627, "lon": 6.1183151  } ,"elevation" : 235 ,"confidence" : 50.5 ,"size": 50 ,"type": "Vibration" }
+{ "index" : { "_index" : "e3e", "_type" : "event" } }
+{ "eventuuid": "cddef10a8-0b84-11e5-b78b-02163e00a1e7" ,"timestamp" : 1433499964000 ,"location" : { "lat": 48.2663427, "lon": 4.1183151  } ,"elevation" : 40 ,"confidence" : 28.9 ,"size": 220 ,"type": "Tidal wave" }
+{ "index" : { "_index" : "e3e", "_type" : "event" } }
+{ "eventuuid": "f46f0126-0b64-11e5-9d06-02163e00a1e7" ,"timestamp" : 1433591864000 ,"location" : { "lat": 46.0538229, "lon": 6.2933481  } ,"elevation" : 500 ,"confidence" : 95.6 ,"size": 130 ,"type": "Avalanche" }
+
