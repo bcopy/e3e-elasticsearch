@@ -17,6 +17,7 @@ Docker ships with most Linux distribution, please refer to the Docker setup proc
 
 ```bash
 yum install docker
+service docker start
 ```
 
 ### Setting up a quick ElasticSearch image with Docker
